@@ -60,7 +60,7 @@ function getHTML() {
     return htmlStr;
 }
 
-
+// Modul: Erstellen der Tabulatoren (1..n)
 function getTabs(count) {
     let tabs ="";
     for (let i = 0; i < count; i++) {
@@ -69,10 +69,10 @@ function getTabs(count) {
     return tabs;
 }
 
-
+// Modul: Entscheidung open/close
 function isOpenElement(tag) {
     
-    // tag liegt nicht oben! --> neu, open
+    // tag liegt NICHT oben! --> neu, open
     let cond = (tag != stack[stack.length-1])  
     
     if (cond) {  // open
